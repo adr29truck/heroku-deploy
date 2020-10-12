@@ -52,7 +52,7 @@ function herokuActionSetUp(appName) {
     const HEROKU_API_KEY = core.getInput('api_key');
     const exportKey = `HEROKU_API_KEY=${HEROKU_API_KEY}`;
   
-    return `${exportKey} heroku container:${action} web --app ${appName}` 
+    return `heroku container:${action} web --app ${appName}` 
   }
 }
 
